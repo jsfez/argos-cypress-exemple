@@ -7,6 +7,7 @@ describe("template spec", () => {
         { width: 768, height: 1024 },
         { width: 390, height: 844 },
       ],
+      capture: "viewport",
     });
   });
 });
