@@ -15,3 +15,8 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
+
+      - name: Upload screenshots to argos-ci.com
+        run: npm exec -- argos upload ./cypress/screenshots
+        env:
+          ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
